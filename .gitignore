@@ -1,0 +1,22 @@
+# 第一步：先屏蔽根目录下所有文件和文件夹（一刀切，只留后面指定的内容）
+/*
+
+# 第二步：逐个放行你需要上传的目标文件
+!/GO_catboost.py
+!/GO_lightGBM.py
+!/GO_RF.py
+!/GO_svm.py
+!/GO_xgboost.py
+!/modified_data.csv
+
+# 第三步：保留当前.gitignore规则文件本身（必须加，否则规则会失效）
+!/.gitignore
+
+# 第四步：保留Git核心目录（Git自动管理，加了更保险）
+!/.git/
+
+# 可选补充：自动屏蔽Python运行缓存文件，避免误传
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
