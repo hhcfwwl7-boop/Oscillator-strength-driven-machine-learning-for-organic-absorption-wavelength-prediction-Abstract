@@ -8,8 +8,7 @@
 !/GO_svm.py
 !/GO_xgboost.py
 !/modified_data.csv
-!/data.csv              
-!/对比结果.csv 
+
 
 # 第三步：保留当前.gitignore规则文件本身（必须加，否则规则会失效）
 !/.gitignore
